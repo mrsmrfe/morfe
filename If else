@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>If Else Example</title>
+</head>
+<body>
+
+  <h2>Check Number</h2>
+  <button onclick="checkNumber()">Check</button>
+
+  <script>
+    function checkNumber() {
+      let number = 10;
+
+      if (number > 0) {
+        alert("The number is positive.");
+      } else if (number < 0) {
+        alert("The number is negative.");
+      } else {
+        alert("The number is zero.");
+      }
+    }
+  </script>
+
+</body>
+</html>

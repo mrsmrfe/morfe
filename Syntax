@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Console Log Example</title>
+</head>
+<body>
+
+  <h2>Open the Console!</h2>
+  <button onclick="logMessage()">Click to Log</button>
+
+  <script>
+    function logMessage() {
+      console.log("This is a message in the console!");
+    }
+  </script>
+
+</body>
+</html>

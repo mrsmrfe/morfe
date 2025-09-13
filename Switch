@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Switch Statement Example</title>
+</head>
+<body>
+
+  <h2>Day of the Week</h2>
+  <button onclick="showDay()">Check Day</button>
+
+  <script>
+    function showDay() {
+      let day = 3; // You can change this number (1-7)
+
+      let dayName;
+
+      switch (day) {
+        case 1:
+          dayName = "Monday";
+          break;
+        case 2:
+          dayName = "Tuesday";
+          break;
+        case 3:
+          dayName = "Wednesday";
+          break;
+        case 4:
+          dayName = "Thursday";
+          break;
+        case 5:
+          dayName = "Friday";
+          break;
+        case 6:
+          dayName = "Saturday";
+          break;
+        case 7:
+          dayName = "Sunday";
+          break;
+        default:
+          dayName = "Invalid day";
+      }
+
+      alert("Day: " + dayName);
+    }
+  </script>
+
+</body>
+</html>

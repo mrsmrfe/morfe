@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>String Example</title>
+</head>
+<body>
+
+  <h2>String Concatenation</h2>
+  <button onclick="showMessage()">Show Message</button>
+
+  <script>
+    function showMessage() {
+      let firstName = "John";
+      let lastName = "Doe";
+      let fullName = firstName + " " + lastName;
+
+      alert("Hello, " + fullName + "!");
+    }
+  </script>
+
+</body>
+</html>

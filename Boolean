@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Boolean Example</title>
+</head>
+<body>
+
+  <h2>Boolean Check</h2>
+  <button onclick="checkLogin()">Check Login</button>
+
+  <script>
+    function checkLogin() {
+      let isLoggedIn = true;
+
+      if (isLoggedIn) {
+        alert("User is logged in.");
+      } else {
+        alert("User is not logged in.");
+      }
+    }
+  </script>
+
+</body>
+</html>
