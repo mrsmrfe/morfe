@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Object Example</title>
+</head>
+<body>
+
+<h1>JavaScript Object</h1>
+
+<p id="demo"></p>
+
+<script>
+
+  const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 30,
+    fullName: function() {
+      return this.firstName + " " + this.lastName;
+    }
+  };
+
+
+  let info = "Name: " + person.fullName() + "<br>" +
+             "Age: " + person.age;
+
+ 
+  document.getElementById("demo").innerHTML = info;
+</script>
+
+</body>
+</html>

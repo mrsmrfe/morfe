@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Simple Logical Operators</h2>
+
+<p id="demo"></p>
+
+<script>
+let x = 7;
+let y = 3;
+
+let andResult = (x > 5 && y < 5);
+let orResult = (x < 5 || y < 5);
+let notResult = !(x === y);
+
+document.getElementById("demo").innerHTML = 
+  "x > 5 AND y < 5: " + andResult + "<br>" +
+  "x < 5 OR y < 5: " + orResult + "<br>" +
+  "NOT (x === y): " + notResult;
+</script>
+
+</body>
+</html>
