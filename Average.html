@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculate Average</title>
+</head>
+<body>
+
+<h1>Calculate Average of Numbers</h1>
+
+<p>Enter numbers separated by spaces:</p>
+<input type="text" id="numbers" placeholder="e.g. 10 20 30">
+<button onclick="calculateAverage()">Calculate</button>
+
+<p id="result"></p>
+
+<script>
+function calculateAverage() {
+  {
+    const input = document.getElementById('numbers').value;
+    const nums = input.split(' ').map(Number).filter(n => !isNaN(n));
+    if (nums.length === 0) {
+      document.getElementById('result').textContent = 'Please enter valid numbers.';
+      return;
+    }
+    let sum = 0;
+    {
+      for (let n of nums) {
+        sum += n;
+      }
+    }
+    const avg = sum / nums.length;
+    document.getElementById('result').textContent = 'Average: ' + avg;
+  }
+}
+</script>
+
+</body>
+</html>
